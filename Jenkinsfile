@@ -6,6 +6,7 @@ pipeline {
             steps {
                 cleanWs()
             }
+        }
         stage('Hello') {
             steps {
                 git branch: 'main', url: 'https://github.com/debushee/jenkins-pipeline.git'
